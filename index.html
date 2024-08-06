@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Khuzaima's Website</title>
+        <link rel="icon" type="image/x-icon" href="logo.png">
+         <style>
+            /* From here our CSS code starts */
+            ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #00ff08;
+}
+
+         </style>
+
+    </head>
+</html>
+<body style="background-image: linear-gradient(to right, white , grey);">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index2.html">About</a></li>
+      </ul>      
+    <h1>
+        Khuzaima Awan Website
+    </h1>
+    <h4>
+        I am Khuzaima Awan and I will teach you about Elephant.
+    </h4>
+    <p>
+        The elephant, one of the most majestic and intelligent creatures on Earth, stands as a symbol of wisdom and strength. These gentle giants are known for their remarkable memory, complex social structures, and intricate communication skills. With their distinctive trunks, large ears, and impressive size, elephants play a crucial role in their ecosystems, from shaping landscapes to supporting biodiversity. Their presence is felt across Africa and Asia, where they live in diverse habitats ranging from savannas to forests. Despite their grandeur, elephants face numerous threats, including habitat loss and poaching, making conservation efforts vital to ensuring their survival for future generations.
+    </p>
+    <img src="pic1.jpg" alt="elephant" width="300" height="300">
+</body>
+
+<body>
+    <script>
+        function turnOnOff() {
+            let image = document.getElementById('Image');
+            if (image.src.match("ONbulb"))
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg";
+            else
+                image.src =
+"https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg";
+        }
+    </script>
+ 
+    <img id="Image" onclick="turnOnOff()" src=
+"https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+ 
+    <p>
+        Click on the bulb to turn it ON and OFF
+    </p>
+</body>
